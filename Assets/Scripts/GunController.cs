@@ -53,7 +53,10 @@ public class GunController : MonoBehaviour
 
     public void Reload()
     {
+        if(ammo != ammoCapacity)
+        {
         animator.SetTrigger("Reload");
+        }
     }
 
     public void ReloadDone()
